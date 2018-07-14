@@ -4,7 +4,7 @@ services:
     build: ./wordpress
     container_name: test_app
     links:
-      - test_app:mysql
+      - test_app_db:mysql
     env_file:
       - .env
     ports:
